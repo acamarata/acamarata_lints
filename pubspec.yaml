@@ -1,0 +1,24 @@
+name: acamarata_lints
+description: >
+  Shared Dart and Flutter lint rules for acamarata packages.
+  Extends flutter_lints with strict acamarata-specific overrides
+  for consistent code style across all packages.
+version: 1.0.0
+homepage: https://github.com/acamarata/acamarata_lints
+repository: https://github.com/acamarata/acamarata_lints
+
+topics:
+  - lints
+  - analysis
+  - flutter
+  - dart
+  - style
+
+environment:
+  sdk: ">=3.0.0 <4.0.0"
+
+dependencies:
+  flutter_lints: ">=3.0.0 <6.0.0"
+
+dev_dependencies:
+  test: ^1.25.0

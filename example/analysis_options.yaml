@@ -1,0 +1,20 @@
+# Example: how consumers use acamarata_lints.
+#
+# In your pubspec.yaml, add:
+#
+#   dev_dependencies:
+#     acamarata_lints: ^1.0.0
+#
+# Then create or update your analysis_options.yaml with this single include:
+
+include: package:acamarata_lints/analysis_options.yaml
+
+# You can add project-specific overrides below:
+# analyzer:
+#   exclude:
+#     - "**/*.g.dart"      # Generated files
+#     - "**/*.freezed.dart"
+#
+# linter:
+#   rules:
+#     public_member_api_docs: false  # Optional: disable for app code

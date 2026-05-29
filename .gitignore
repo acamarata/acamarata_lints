@@ -1,0 +1,27 @@
+# Dart build artifacts
+.dart_tool/
+build/
+.packages
+pubspec.lock
+doc/api/
+
+# IDE files
+*.iml
+.idea/
+.vscode/*
+
+# OS files
+.DS_Store
+
+# AI agent directories (not source code)
+.claude/
+.env
+.env.*
+.codex/
+.cursor/
+.aider/
+.aider.chat.history.md
+.continue/
+.windsurf/
+.gemini/
+.codeium/

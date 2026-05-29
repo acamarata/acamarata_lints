@@ -1,0 +1,78 @@
+include: package:flutter_lints/flutter.yaml
+
+analyzer:
+  exclude:
+    # The example directory includes package:acamarata_lints/analysis_options.yaml
+    # which cannot be resolved from within the package itself. Consumers will
+    # resolve it from their own pub cache after installing the package.
+    - "example/**"
+  language:
+    strict-casts: true
+    strict-inference: true
+    strict-raw-types: true
+  errors:
+    # Treat these as errors, not warnings
+    missing_return: error
+    dead_code: warning
+    unused_import: warning
+
+linter:
+  rules:
+    # Prefer single quotes for strings — keeps code consistent and matches JS conventions.
+    prefer_single_quotes: true
+
+    # Every function must declare its return type explicitly.
+    # Inference alone is not sufficient for public APIs.
+    always_declare_return_types: true
+
+    # Avoid print() in library code. Use a proper logging mechanism instead.
+    avoid_print: true
+
+    # Always use trailing commas in argument lists, parameter lists, etc.
+    # This makes diffs cleaner and reduces merge conflicts.
+    require_trailing_commas: true
+
+    # Prefer const constructors wherever possible — reduces rebuilds in Flutter.
+    prefer_const_constructors: true
+    prefer_const_constructors_in_immutables: true
+    prefer_const_declarations: true
+    prefer_const_literals_to_create_immutables: true
+
+    # Avoid unnecessary type annotations where they can be inferred,
+    # but keep them where they communicate intent on public APIs.
+    avoid_redundant_argument_values: true
+
+    # Prefer using is! for type checks rather than negated is.
+    prefer_is_not_operator: true
+
+    # Avoid empty catch blocks — either handle the error or rethrow.
+    avoid_empty_else: true
+    empty_catches: true
+
+    # Prefer final for variables that are never reassigned.
+    prefer_final_fields: true
+    prefer_final_locals: true
+
+    # Avoid dynamic types — use proper types or generics.
+    avoid_dynamic_calls: true
+
+    # Sort constructors before other members.
+    sort_constructors_first: true
+
+    # Use named parameters for booleans — improves call-site readability.
+    avoid_positional_boolean_parameters: true
+
+    # Document all public APIs.
+    public_member_api_docs: true
+
+    # Use super-initializer parameters where possible (Dart 2.17+).
+    use_super_parameters: true
+
+    # Always use curly braces for control flow, even for single statements.
+    curly_braces_in_flow_control_structures: true
+
+    # Avoid returning null for void-typed return types.
+    avoid_returning_null_for_void: true
+
+    # Use raw string literals only when they add clarity.
+    use_raw_strings: false
