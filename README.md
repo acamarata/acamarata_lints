@@ -56,7 +56,7 @@ See `example/analysis_options.yaml` for a full annotated example.
 | `require_trailing_commas` | Trailing commas produce cleaner diffs and reduce merge conflicts. |
 | `prefer_const_constructors` | Const constructors reduce Flutter widget rebuilds. |
 | `avoid_dynamic_calls` | Dynamic calls bypass the type system and cause runtime errors. |
-| `public_member_api_docs` | All public APIs must be documented — these are library packages. |
+| `public_member_api_docs` | All public APIs must be documented. These are library packages. |
 | `use_super_parameters` | Dart 2.17+ super-initializer syntax reduces boilerplate. |
 | `avoid_positional_boolean_parameters` | Boolean positional parameters are unreadable at call sites. |
 | `sort_constructors_first` | Consistent class structure across all files. |
@@ -66,9 +66,9 @@ See `example/analysis_options.yaml` for a full annotated example.
 
 This package enables three strict analyzer modes:
 
-- `strict-casts` — no implicit casts between types
-- `strict-inference` — type inference failures are reported
-- `strict-raw-types` — raw generic types (List without a type argument) are flagged
+- `strict-casts`: no implicit casts between types
+- `strict-inference`: type inference failures are reported
+- `strict-raw-types`: raw generic types (List without a type argument) are flagged
 
 ## Requirements
 
